@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "cross-env": "^10.1.0",
+    "next.js": "^1.0.3",
     "node.js": "^0.0.1-security",
     "typescript": "^5.9.3"
   }
