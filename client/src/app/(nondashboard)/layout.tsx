@@ -1,11 +1,12 @@
-import React, { Children } from "react";
+import Navbar from "@/components/Navbar";
+import { NAVBAR_HEIGHT } from "@/lib/constants";
+import React from "react";
 
-const Layout = () => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
         <div>
-            {/*<Navbar /> */}
-            navbar
-            <main className={'h-full w-flex w-full flex-col pt-[${NAVBAR_HEIGHT}px]'}>
+            <Navbar />
+            <main className={`h-full w-full flex-col pt-[${NAVBAR_HEIGHT}px]`}>
                 {children}
             </main>
         </div>
