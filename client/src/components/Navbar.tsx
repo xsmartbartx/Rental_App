@@ -24,6 +24,9 @@ const Navbar = () => {
               />
               <div className="text-xl font-bold">
                 Rental App
+                <span className="text-secondary-400 font-light hover:!text-primary-300">
+                  Beta
+                </span>
               </div>
             </div>
           </Link>
