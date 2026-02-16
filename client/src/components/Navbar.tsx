@@ -1,6 +1,7 @@
 import { NAVBAR_HEIGHT } from "@/lib/constants";
 import { Link } from "lucide-react";
 import React from 'react';
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
@@ -30,6 +31,26 @@ const Navbar = () => {
               </div>
             </div>
           </Link>
+          <p className="hidden md:block text-sm text-primary-300">
+            Find your perfect rental home with ease
+          </p>
+          <div className="flex items-center gap-4">
+            <Link href="/signin">
+              <Button
+                variant="outline"
+                className="bg-secondary-400 hover:bg-secondary-500 text-white"
+              >
+                Sign In
+              </Button>
+            </Link>
+            <Link href="/signup">
+              <Button
+                variant="outline"
+                className="bg-secondary-400 hover:bg-secondary-500 text-white"
+              >
+                Sign Up
+              </Button>
+            </Link>
         </div>
       </div>
     </div>
