@@ -3,6 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
     return (
@@ -25,6 +27,25 @@ const HeroSection = () => {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
                         Find Your Perfect Rental Home
                     </h1>
+                    <p className="text-lg sm:text-xl md:text-2xl mb-8">
+                        Discover a wide range of rental properties tailored to your needs. Start your search today and find the home that fits your lifestyle.
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Input
+                            type="text"
+                            value="search query"
+                            onChange={() => {}}
+                            placeholder="Search by city, neighborhood or address"
+                            className="w-full max-w-lg rounded-none rounded-l-xl border"
+                        />
+                        <Button
+                            onClick={() => {}}
+                            className="rounded-none rounded-r-xl bg-blue-600 hover:bg-blue-700 text-white"
+                        >
+                            Search
+                        </Button>
+                    </div>
                 </div>
             </motion.div>
         </div>
